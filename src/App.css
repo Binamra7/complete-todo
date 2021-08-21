@@ -90,6 +90,7 @@ h1 {
 }
 
 .todo-row {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,11 +136,12 @@ h1 {
   align-items: center;
   font-size: 24px;
   cursor: pointer;
+  z-index: 999;
 }
 
 .delete-icon {
   margin-right: 5px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .edit-icon {
