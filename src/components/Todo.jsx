@@ -21,14 +21,31 @@ function Todo({ todos, completeTodos, removeTodo, updateTodo }) {
     return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
-return todos.map((todo, index) => (
+    return todos.map((todo, index) => (
+    
+        //click on the text
+
+    // <div
+    //     className={todo.isComplete ? "todo-row complete" : "todo-row"}
+    //     key={index}
+    // >
+    //     <div key={todo.id} onClick={() => completeTodos(todo.id)}>
+    //     {todo.text}
+    //         </div>
+        
+        
+        //click anywhere on the list
+        
     <div
         className={todo.isComplete ? "todo-row complete" : "todo-row"}
-        key={index}
+            key={index}
+            onClick={() => completeTodos(todo.id)}
     >
-        <div key={todo.id} onClick={() => completeTodos(todo.id)}>
+        <div key={todo.id}>
         {todo.text}
-        </div>
+            </div>
+            
+
         <div className="icons">
             <RiCloseCircleLine
                 onClick={() => removeTodo(todo.id)}
