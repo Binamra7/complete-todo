@@ -26,7 +26,7 @@ function TodoList() {
   };
 
   const removeTodo = (id) => {
-    const removeArr = [...todos].filter(todo=> todo.id !== id);
+    const removeArr = [...todos].filter((todo) => todo.id !== id);
 
     setTodos(removeArr);
   };
